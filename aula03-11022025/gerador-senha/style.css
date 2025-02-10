@@ -25,6 +25,8 @@ input, button {
     margin-top: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    text-align: center;
+    justify-content: center;
 }
 
 button {
@@ -38,6 +40,13 @@ button:hover {
 }
 
 .options {
-    text-align: left;
-    margin-top: 10px;
+    display: flex;
+    justify-content: center; /* Centraliza os checkboxes e os textos no container */
+    gap: 20px; /* Espaço entre os itens */
+}
+
+.options label {
+    display: flex;
+    align-items: center; /* Alinha o checkbox e o texto verticalmente */
+    gap: 8px; /* Espaço entre o checkbox e o texto */
 }
